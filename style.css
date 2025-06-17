@@ -1,0 +1,68 @@
+/* Base background and text */
+body {
+  background-color: #f6f5f1; /* softer neutral */
+  color: #3e3322;            /* deep taupe */
+}
+
+/* Welcome section */
+section.bg-light {
+  background-color: #f8f6f2 !important; /* lighter neutral */
+  color: #3e3322;
+}
+
+/* Card styling */
+.card {
+  background-color: #fffdf8;            /* off-white */
+  border: 1px solid #ece5db;            /* soft beige */
+  box-shadow: 0 2px 12px rgba(180, 140, 90, 0.06);
+}
+
+.card-title {
+  color: #c97a40;                      /* warm accent */
+}
+
+.card-text {
+  color: #6b5840;                      /* soft brown */
+}
+
+/* Accent for buttons */
+.btn-primary, .btn-outline-primary {
+  background-color: #e6a87c;            /* warm peach */
+  border-color: #e6a87c;
+  color: #fff;
+}
+.btn-primary:hover, .btn-outline-primary:hover {
+  background-color: #d48a54;            /* deeper warm accent */
+  border-color: #d48a54;
+  color: #fff;
+}
+.btn-outline-primary {
+  background-color: transparent;
+  color: #e6a87c;
+}
+.btn-outline-primary:hover {
+  background-color: #e6a87c;
+  color: #fff;
+}
+
+/* Footer */
+footer.bg-light {
+  background-color: #f2ede7 !important; /* softest neutral */
+  color: #a08c6b !important;
+  border-top: 1px solid #e5dacb;
+}
+
+/* Rounded corners for a softer look */
+.rounded-4 {
+  border-radius: 1.5rem !important;
+}
+
+/* Responsive tweaks for extra softness */
+@media (max-width: 576px) {
+  .card {
+    border-radius: 1.25rem;
+  }
+  section.bg-light, footer.bg-light {
+    border-radius: 1.25rem !important;
+  }
+}
